@@ -6,6 +6,10 @@ def smaller(a,b):
         min = a
     else:
         min = b
-    print(f'Smaller Number: {min}')
+    return min
 
-smaller(float(input('Enter number: ')), float(input('Enter number: ')))
+a = float(input('Enter number 1: '))
+b = float(input('Enter number 2: '))
+
+num = smaller(a,b)
+print(f'Smaller number: {num:.1f}')

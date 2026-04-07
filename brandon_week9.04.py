@@ -4,12 +4,11 @@
 def format_name(first,last):
     #takes first last name format them neatly into standard format
     if first and last:
-        first = first.title()
-        last = last.title()
-    ## format and print
-    print(f'{first} {last}')
-
-
+        return f'{first.title()} {last.title()}'
 
 ## call function
-format_name(input('First name: '), input('Last name: '))
+first = input('Enter first name: ')
+last = input('Enter last name: ')
+name = format_name(first, last)
+print(f'Formatted name: {name}')
+
